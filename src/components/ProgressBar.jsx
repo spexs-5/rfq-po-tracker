@@ -1,11 +1,8 @@
 import React from 'react';
 
-export default function ProgressBar({ status }) {
-  const steps = ["RFQ Sent", "Quoted", "PO Received"];
-  const currentIndex = steps.indexOf(status);
-
+export default function ProgressBar({ steps = [], currentIndex = -1, onClick }) {
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-2 cursor-pointer" onClick={onClick}>
       {steps.map((step, idx) => (
         <div key={step} className="flex-1">
           <div className={`h-2 rounded-full ${idx <= currentIndex ? 'bg-blue-500' : 'bg-gray-300'}`} />
