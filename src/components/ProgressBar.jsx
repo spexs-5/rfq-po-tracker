@@ -1,5 +1,4 @@
 import React from 'react';
-
 export default function ProgressBar({ status }) {
   const steps = [
     { label: 'RFQ Sent', duration: 14 },
@@ -47,4 +46,5 @@ export default function ProgressBar({ status }) {
       ))}
     </div>
   );
+
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-
 /**
  * Presents additional RFQ/PO details in a full-width, equal-height container.
  * Tailwind classes have been removed in favor of basic HTML structure

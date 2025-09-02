@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 /**
  * Editing interface for RFQ/PO notes. The layout mirrors the static
  * AdditionalInfo component but provides controls for modifying content.
