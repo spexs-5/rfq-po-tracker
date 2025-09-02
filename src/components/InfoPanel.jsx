@@ -4,7 +4,7 @@ import EditInfo from './EditInfo';
 
 const today = new Date().toISOString().split('T')[0];
 
-const initialData = {
+export const initialData = {
   companyName: '',
   rfqId: '',
   principalName: '',
@@ -23,8 +23,7 @@ const initialData = {
   }
 };
 
-export default function InfoPanel({ onClose }) {
-  const [data, setData] = useState(initialData);
+export default function InfoPanel({ data, setData, onClose }) {
   const [editing, setEditing] = useState(false);
 
   const handleSave = (updated) => {
